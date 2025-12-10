@@ -1,0 +1,68 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px 24px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+section {
+  margin-top: 24px;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+#message {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 0.9rem;
+}
+
+#message.success {
+  color: #166534;
+}
+
+#message.error {
+  color: #b91c1c;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+
+.actions button {
+  margin-right: 8px;
+}

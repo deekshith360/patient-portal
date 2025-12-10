@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Portal - Documents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Patient Medical Documents</h1>
+
+    <section class="upload-section">
+      <h2>Upload PDF</h2>
+      <form id="uploadForm">
+        <input type="file" id="fileInput" accept="application/pdf" />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="message"></div>
+    </section>
+
+    <section class="list-section">
+      <h2>Your Documents</h2>
+      <div id="loading" class="hidden">Loading...</div>
+      <div id="empty" class="hidden">No documents uploaded yet.</div>
+      <table id="docsTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Filename</th>
+            <th>Size (MB)</th>
+            <th>Uploaded At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="docsBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
